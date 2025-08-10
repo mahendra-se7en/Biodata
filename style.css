@@ -1,0 +1,100 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #F8F0E3; /* Creamy paper background */
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18.277c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7zm48 25.45c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7zm-48 0c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7zm48-25.45c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7z' fill='%239A2A2A' fill-opacity='0.05'/%3E%3C/svg%3E");
+}
+.font-tangerine {
+    font-family: 'Tangerine', cursive;
+}
+.invitation-card {
+    background-color: #FFF8F0;
+    border: 2px solid #C4A47A; /* Muted Gold */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 2rem auto;
+    position: relative;
+    padding: 2rem;
+}
+.border-pattern {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border: 1px solid #D4AF37; /* Gold */
+    pointer-events: none;
+}
+.corner-motif {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('https://www.transparentpng.com/thumb/indian-wedding/border-clipart-png-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.top-left { top: -10px; left: -10px; }
+.top-right { top: -10px; right: -10px; transform: scaleX(-1); }
+.bottom-left { bottom: -10px; left: -10px; transform: scaleY(-1); }
+.bottom-right { bottom: -10px; right: -10px; transform: scale(-1, -1); }
+
+.section-title {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    color: #9A2A2A; /* Maroon */
+    text-align: center;
+}
+.text-maroon { color: #9A2A2A; }
+.text-gold { color: #B8860B; }
+
+.profile-pic-frame {
+    border: 4px solid #D4AF37;
+    padding: 8px;
+    background: #FFF8F0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.divider-ornament {
+    text-align: center;
+    margin: 2rem 0;
+}
+.divider-ornament img {
+    height: 40px;
+    opacity: 0.5;
+}
+.btn-upload {
+    background-color: #9A2A2A;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+.btn-upload:hover {
+    background-color: #7c2222;
+}
+
+/* Cropper Modal Styles */
+#cropModal { background-color: rgba(0, 0, 0, 0.8); }
+#imageToCropContainer { max-width: 90vw; max-height: 70vh; }
+.cropper-view-box, .cropper-face { border-radius: 50%; }
+
+.divider-ornament {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #555;
+}
+
+.divider-ornament::before,
+.divider-ornament::after {
+    content: "";
+    flex: 1;
+    border-top: 2px solid #ccc;
+}
+
+.divider-ornament:not(:empty)::before {
+    margin-right: 10px;
+}
+
+.divider-ornament:not(:empty)::after {
+    margin-left: 10px;
+}

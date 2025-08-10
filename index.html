@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marriage Biodata - Pravin Kumar Singh</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4">
+    <div class="invitation-card">
+      <div class="border-pattern">
+        <div class="corner-motif top-left"></div>
+        <div class="corner-motif top-right"></div>
+        <div class="corner-motif bottom-left"></div>
+        <div class="corner-motif bottom-right"></div>
+      </div>
+
+      <header class="text-center py-8">
+        <img
+          src="./image/Ganesha.png"
+          alt="Lord Ganesha"
+          class="h-24 mx-auto"
+          onerror="this.onerror=null;this.src='https://placehold.co/100x80/FFF8F0/776B5D?text=Ganesha';"
+        />
+        <p class="text-gold text-2xl mt-4">|| श्री गणेशाय नमः ||</p>
+        <h1 class="section-title mt-4">Marriage Biodata</h1>
+      </header>
+
+      <main class="px-4 md:px-8">
+        <!-- Profile Picture Section -->
+        <section class="flex flex-col items-center text-center">
+          <div class="relative profile-pic-frame rounded-full">
+            <img
+              id="profilePic"
+              src="./image/image1.jpg"
+              alt="Profile Picture"
+              class="rounded-full w-48 h-48 object-cover"
+            />
+          </div>
+          <label for="profilePicUpload" class="btn-upload cursor-pointer mt-4"
+            >Upload Photo</label
+          >
+          <input
+            type="file"
+            id="profilePicUpload"
+            class="hidden"
+            accept="image/*"
+          />
+
+          <h2 class="font-tangerine text-6xl text-maroon mt-6">
+            Pravin Kumar Singh
+          </h2>
+          <p class="text-gray-600 italic max-w-lg mx-auto mt-2">
+            "A dedicated professional with a love for cricket and books, looking
+            for a life partner to share the journey with."
+          </p>
+        </section>
+
+        <div class="divider-ornament">
+          <span>o</span>
+        </div>
+
+        <!-- Details Section -->
+        <section
+          class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 text-lg"
+        >
+          <div>
+            <h3 class="font-tangerine text-5xl text-maroon mb-4">
+              Personal Details
+            </h3>
+            <div class="space-y-2 text-gray-700">
+              <p><strong>Date of Birth:</strong> 08th September 1994</p>
+              <p><strong>Height:</strong> 5' 11"</p>
+              <p><strong>Religion / Caste:</strong> Hindu / Awadhiya Kurmi</p>
+              <p><strong>Education:</strong> M.Com</p>
+              <p>
+                <strong>Profession:</strong> CA Finalist at KadmaWala (CA Firm,
+                Rourkela)
+              </p>
+              <p><strong>Hobbies:</strong> Playing Cricket & Reading Books</p>
+              <p><strong>Diet:</strong> Vegetarian / Non-Vegetarian</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-tangerine text-5xl text-maroon mb-4">
+              Family Background
+            </h3>
+            <div class="space-y-2 text-gray-700">
+              <p><strong>Father's Name:</strong> Mr. Bijay Singh</p>
+              <p><strong>Mother's Name:</strong> Mrs. Sona Pati Devi</p>
+              <div class="pt-1">
+                <p><strong>Siblings:</strong></p>
+                <ul class="list-disc list-inside pl-4 mt-1 space-y-1">
+                  <li>Younger Brother: CS Engineer from IIT Delhi</li>
+                  <li>Cousin Younger Brother: B.Tech Mechanical Engineer</li>
+                  <li>Cousin Younger Brother: CS Engineer</li>
+                </ul>
+              </div>
+              <p>
+                <strong>Native Place:</strong> Parsa Khaira, Aurangabad, Bihar
+              </p>
+              <p><strong>Current Address:</strong> Rajgangpur, Odisha</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider-ornament">
+          <span>o</span>
+        </div>
+
+        <!-- Image Gallery -->
+        <section>
+          <h3 class="section-title">Moments & Memories</h3>
+          <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+            <img
+              src="./image/image1.jpg"
+              alt="Gallery image"
+              class="w-full h-48 object-cover border-2 border-gold p-1"
+            />
+            <img
+              src="./image/image3.jpg"
+              alt="Gallery image"
+              class="w-full h-48 object-cover border-2 border-gold p-1"
+            />
+            <img
+              src="./image/image4.jpg"
+              alt="Gallery image"
+              class="w-full h-48 object-cover border-2 border-gold p-1"
+            />
+            <img
+              src="./image/image2.jpg"
+              alt="Gallery image"
+              class="w-full h-48 object-cover border-2 border-gold p-1"
+            />
+            <img
+              src="./image/image8.jpg"
+              alt="Gallery image"
+              class="w-full h-48 object-cover border-2 border-gold p-1"
+            />
+            <img
+              src="./image/image7.jpg"
+              alt="Gallery image"
+              class="w-full h-48 object-cover border-2 border-gold p-1"
+            />
+          </div>
+          <!-- <div class="text-center mt-6">
+                    <label for="galleryUpload" class="btn-upload cursor-pointer">Add More Photos</label>
+                    <input type="file" id="galleryUpload" class="hidden" accept="image/*" multiple>
+                </div> -->
+        </section>
+
+        <div class="divider-ornament">
+          <span>o</span>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="text-center pb-8">
+          <h3 class="section-title">Get In Touch</h3>
+          <p class="max-w-xl mx-auto mt-2 text-gray-600">
+            If you would like to take this forward, we would be happy to
+            hear from you.
+          </p>
+          <!-- <div class="mt-4 space-y-1 text-lg">
+            <p><strong>Email:</strong></p>
+            <p><strong>Phone:</strong> [Your Contact Phone]</p>
+          </div> -->
+        </section>
+      </main>
+    </div>
+
+    <!-- Cropper Modal -->
+    <div
+      id="cropModal"
+      class="fixed inset-0 w-full h-full flex items-center justify-center z-50 hidden"
+    >
+      <div class="bg-white p-4 rounded-lg shadow-xl w-full max-w-lg">
+        <h3 class="text-xl font-tangerine text-maroon mb-4">Crop Your Image</h3>
+        <div id="imageToCropContainer"><img id="imageToCrop" src="" /></div>
+        <div class="mt-4 flex justify-end gap-4">
+          <button
+            id="cancelCrop"
+            class="px-6 py-2 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400 font-bold"
+          >
+            Cancel
+          </button>
+          <button id="cropButton" class="btn-upload">Crop & Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
